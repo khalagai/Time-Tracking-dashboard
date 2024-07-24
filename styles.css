@@ -1,0 +1,206 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.hrs {font-size: 1.6rem;font-weight: 100;}
+.previous, .name {font-size: 0.7rem;font-weight: 500;color: hsl(236, 100%, 87%);}
+#ellipse {cursor: pointer;}
+span br {display: none;}
+.note {
+    font-size: 0.9rem;
+}
+span {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+}
+#hero {
+    height: 3rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    font-family: Rubik;
+    width: 60%;
+    min-width: 17rem;
+    background-color: black;
+}
+.user-report {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1rem;
+    width: 95%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.7rem;
+    background-color: hsl(246, 80%, 60%);
+    height: 6rem;
+    z-index: 1;
+}
+.plan {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    background-color: hsl(235, 46%, 20%);
+    color: hsl(236, 100%, 87%);
+    height: 6rem;
+    border-radius: 0.6rem;
+    margin-top: -3rem;
+}
+
+.plan p {cursor: pointer;}
+.plan p:hover {color: white;}
+.work, .social, .play, .study, .exercise, .self-care, .heading {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0.6rem;
+}
+.details:hover {
+    background-color: hsl(235, 45%, 61%);
+}
+.grade {
+    height: 6rem;
+    border-radius: 0.6rem;
+    background-repeat:no-repeat;
+    background-position: 95% -30%;
+    background-size: 4rem;
+}
+.work-grade {
+    background-image: url("./images/icon-work.svg");
+    background-color: hsl(15, 100%, 70%);
+}
+.play-grade {
+    background-image: url("./images/icon-play.svg");
+    background-color: hsl(195, 74%, 62%);
+}
+.study-grade {
+    background-image: url("./images/icon-study.svg");
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise-grade {
+    background-image: url("./images/icon-exercise.svg");
+    background-color: hsl(145, 58%, 55%);
+}
+.social-grade {
+    background-image: url("./images/icon-social.svg");
+    background-color: hsl(264, 64%, 52%);
+}
+.selfCare-grade {
+    background-image: url("./images/icon-self-care.svg");
+    background-color: hsl(43, 84%, 65%);
+}
+.align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    color: white;
+    border-radius: 0 0 0.6rem 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -1rem;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    color: white;
+    border-radius: 0.6rem 0.6rem 0 0 ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    span br {display: block;}
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+    .user-report {
+        padding: 0;
+        max-width: 48rem;
+    }
+    .heading {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column: 1;
+    }
+    .work {
+        grid-column: 2;
+        grid-row: 1;    
+    }
+    .play {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .study {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .exercise {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .social {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .self-care {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:left;
+        padding-left: 1rem;
+        height: 16rem;
+        margin-bottom: -1rem;
+        gap: 1rem;        
+    }
+    #hero {
+        margin-top: 2rem;
+    }
+    span {font-size: 1.5rem;}
+    .plan {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        margin-top: 0;
+        height: auto;
+    }
+    .align {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding-right: 0;
+    }
+}
